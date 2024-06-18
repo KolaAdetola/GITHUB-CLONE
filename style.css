@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    /* font-variation-settings: "wdth" 100;                   */
+}
+header{
+    color: #fff;
+    /* margin-top: 10px; */
+    background-color: black;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    /* margin: 0 auto;
+    padding: 0 20px; */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+.hamburger{
+    width: 60px;
+    /* height: 30px; */
+    border-radius: 5px;
+    background-color: #000;
+    border: 1px solid rgb(104, 97, 97);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+.line{
+    width: 15px;
+    height: 2px;
+    margin: 1px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(104, 97, 97);
+}
+.logo{
+    margin-left:-10px;
+}
+.name{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    color:#d1cbcb;
+    margin-left: -10px;
+}
+.searchBtn{
+    margin-left: 400px;
+    /* width: 400px; */
+}
+.searchBtn {
+    margin-left: 550px;
+    width: 350px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgb(104, 97, 97);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+
+    background-color: #000;
+}
+.searchImg{
+    width: 20px;
+    height: 20px;
+    /* margin-right: 10px; */
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-left: 10px;
+    cursor: text;
+    /* margin-top: 5px; */
+    /* position: absolute; */
+
+}
+
+.search{
+    width: 250px;
+    height: 28px;
+    /* margin-right: 10px; */
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-left: 20px;
+    cursor: text;
+    /* margin-top: 5px; */
+    background-color: #000;
+    /* position: relative;  */
+    border-radius: 8px;
+    border: none;
+}
+.bar{
+    width: 0.2px;
+    height: 20px;
+    border:0.2px solid rgb(104, 97, 97);
+    margin-left: 15px;
+    background-color: #fff;
+}
+.symbols{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+#bar{
+    width: 0.2px;
+    height: 20px;
+    border:0.2px solid rgb(104, 97, 97);
+    margin-left: -10px;
+    background-color: #fff;
+}
+.new{
+    width: 40px;
+    height: 10px;
+    margin-left: -10px;
+    border: 1px solid rgb(104, 97, 97);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 9px solid rgb(104, 97, 97); /* Color of the triangle */
+  }
+.dot-circle{
+    width: 30px;
+    height: 30px;
+    margin-left: -10px;
+    border: 1px solid rgb(104, 97, 97);
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(104, 97, 97);
+    margin-left: 10px;
+    cursor: pointer; */
+}
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid rgb(104, 97, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: ; */
+
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(104, 97, 97);
+    cursor: pointer;
+}
+.requests{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.pull-requests{
+    width: 30px;
+    height: 30px;
+    margin-left: -10px;
+    border: 1px solid rgb(104, 97, 97);
+    border-radius: 8px;
+}
+.notification{
+    width: 30px;
+    height: 30px;
+    margin-left: -10px;
+    border: 1px solid rgb(104, 97, 97);
+    border-radius: 8px;
+}
+.profile{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: -10px;
+}
