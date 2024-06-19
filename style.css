@@ -111,9 +111,9 @@ header{
 .bar{
     width: 0.2px;
     height: 20px;
-    border:0.2px solid rgb(104, 97, 97);
+    border:0.2px solid black;
     margin-left: 15px;
-    background-color: #fff;
+    background-color: rgb(104, 97, 97);
 }
 .symbols{
     width: 20px;
