@@ -315,3 +315,42 @@ main{
     padding-left: 5px;
     padding-right: 5px;
 }
+.repos-text{
+    color:#fff;
+    font-size:10px;
+    font-weight:100;
+}
+.pinned-repos{
+    padding-bottom:100px;
+}
+.repos{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    row-gap:10px;
+    column-gap:1px;
+    margin-top:30px;
+    
+}
+.projects{
+    border: 1px solid rgb(104, 97, 97);
+    border-radius:10px;
+    width:95%;
+    height:120px;
+}
+.cont-text{
+    position:absolute;
+    top:570px;
+    color:white;
+    font-size:10px;
+    /* margin-top:90px; */
+}
+.contribution{
+    margin-top:68px;
+    /* background-color:pink; */
+    width:53vw;
+    height:450px;
+    border:1px solid rgb(104, 97, 97);
+    border-radius:10px;
+    
+}
