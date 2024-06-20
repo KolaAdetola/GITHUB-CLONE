@@ -1,112 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Define the character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the page -->
     <title>Github</title>
+    <!-- Link to the favicon -->
     <link rel="shortcut icon" href="res/github.png" type="image/x-icon" width="20px" height="20px">
+    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Preconnect to Google Fonts and Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to the Open Sans font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
- <header>
-    <div class="container">
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <div class="logo">
-            <img src="res/social.png" alt="logo" width="35px" height="35px">
-        </div>
-        <h2 class="name">kolaAdetola</h2>
-        <div class="searchBtn">
-            <div class="searchImg">
-                <img src="res/search.png" alt="search" width="20px" height="20px">
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <!-- Hamburger menu -->
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div class="placeholder">
-                <input type="text" placeholder="Type / to search" class="search">
+            <!-- Logo section -->
+            <div class="logo">
+                <img src="res/social.png" alt="logo" width="35px" height="35px">
             </div>
-            <div class="bar"></div>
-            <div class="symbols">
-             >_
+            <!-- User name and search bar -->
+            <h2 class="name">kolaAdetola</h2>
+            <div class="searchBtn">
+                <div class="searchImg">
+                    <img src="res/search.png" alt="search" width="20px" height="20px">
+                </div>
+                <div class="placeholder">
+                    <input type="text" placeholder="Type / to search" class="search">
+                </div>
+                <div class="bar"></div>
+                <div class="symbols">
+                    >_
+                </div>
             </div>
-        </div>
-        <div class="box-cont">
-            <div id="bar"></div>
-            <div class="new">
-                <b>+</b>
-                <div class="triangle"></div>
-            </div>
-            <div class="requests">
-                <div class="dot-circle">
-                    <div class="circle">
-                     <div class="dot"></div>
+            <!-- Box container with new, requests, and profile sections -->
+            <div class="box-cont">
+                <div id="bar"></div>
+                <div class="new">
+                    <b>+</b>
+                    <div class="triangle"></div>
+                </div>
+                <div class="requests">
+                    <div class="dot-circle">
+                        <div class="circle">
+                            <div class="dot"></div>
+                        </div>
                     </div>
-                 </div>
-                 <div class="pull-requests">
-    
-                 </div>
-                 <div class="notification">
-    
-                 </div>
-                 <div class="profile"></div>
+                    <div class="pull-requests">
+                    </div>
+                    <div class="notification">
+                    </div>
+                    <div class="profile"></div>
+                </div>
             </div>
         </div>
-        
-    </div>
-</header>
-<main>
-    <div class="profile-cont">
-        <div class="profiles-pic"></div>
-        <div class="writings">
-            <h1>Kolawole Adetola</h1>
-            <h2>kolaAdetola <span>.</span> he/him</h2>
+    </header>
+    <!-- Main section -->
+    <main>
+        <!-- Profile container -->
+        <div class="profile-cont">
+            <div class="profiles-pic"></div>
+            <div class="writings">
+                <h1>Kolawole Adetola</h1>
+                <h2>kolaAdetola <span>.</span> he/him</h2>
+            </div>
+            <!-- Edit profile button -->
+            <button id="edit-pro">Edit profile</button>
+            <!-- Followers section -->
+            <div class="followers">
+                <div class="follow-image"></div>
+                <h3><b>18</b> followers</h3>
+                <span>.</span>
+                <h3><b>15</b> following</h3>
+            </div>
+            <!-- Pin section -->
+            <div class="pin"></div>
+            <!-- Writings section -->
+            <div class="writings">
+                <h1 id="word">Highlights</h1>
+            </div>
+            <!-- Badge section -->
+            <div class="badge">
+                <div class="star-img"></div>
+                <h3 class="pro">PRO</h3>
+            </div>
         </div>
-        <button id="edit-pro">Edit profile</button>
-        <div class="followers">
-            <div class="follow-image"></div>
-            <h3><b>18</b> followers</h3>
-            <span>.</span>
-            <h3><b>15</b> following</h3>
-        </div>
-        <div class="pin"></div>
-        <div class="writings">
-            <h1 id="word">Highlights</h1>
-        </div>
-        <div class="badge">
-            <div class="star-img"></div>
-            <h3 class="pro">PRO</h3>
-        </div>
-    </div>
-    <div class="pinned-repos">
-        <div class="repos-text">
-            <h1>Popular repositories</h1>
-        </div>
-        <div class="repos">
-            <div class="projects"></div>
-            <div class="projects"></div>
-            <div class="projects"></div>
-            <div class="projects"></div>
-            <div class="projects"></div>
-            <div class="projects"></div>
-        </div>
-        <div class="contribution">
+        <!-- Pinned repositories section -->
+        <div class="pinned-repos">
+            <div class="repos-text">
+                <h1>Popular repositories</h1>
+            </div>
+            <!-- Repository projects -->
+            <div class="repos">
+                <div class="projects"></div>
+                <div class="projects"></div>
+                <div class="projects"></div>
+                <div class="projects"></div>
+                <div class="projects"></div>
+                <div class="projects"></div>
+            </div>
+            <!-- Contribution text -->
             <div class="cont-text">
                 <h1>50 contributions in the last year</h1>
-                <!-- <div class="years">
-                    <h2>2024</h2>
-                </div> -->
             </div>
-            
-
-        </div>                      
-    </div>   
-</main>
-
-</body>
-</html>
+                    <!-- Contribution graph -->
+                    <div class="contribution">
+                        <div class="commits">
+                            
+                        </div>
+                        <div class="act-over">
+                            <div class="acti"></div>
+                            <div class="line-commit"></div>
+                            <div class="cross"></div>
+                        </div>
+                    </div>  
+                    <!-- Contribution activity -->
+                    <div class="cont-act">
+                        <div class="repo-text">
+                            <h2>Contribution activity</h2>
+                        </div>
+                        <div class="cap">
+                            <div class="june">
+                                <h3>June <span>2024</span></h3>
+                            </div>
+                            <div class="tail"></div>
+                        </div>
+                    </div>                    
+                </div>   
+            </main>
+        </body>
+        </html>
