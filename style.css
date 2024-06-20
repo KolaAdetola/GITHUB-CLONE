@@ -21,9 +21,13 @@ header {
     /* Setting the background color of the header to #010409 */
     background-color: #010409; /* dark blue background */
     /* Adding padding to the header */
-    padding: 15px 10px; /* 15px top and bottom, 10px left and right */
+    padding-left: 10px; /* 15px top and bottom, 10px left and right */
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 0px;
     /* Displaying the header as a flex box */
     display: flex; /* flexbox layout */
+    flex-wrap:wrap ;
     /* Justifying the content of the header to space between */
     justify-content: space-between; /* distribute elements evenly */
     /* Aligning the items of the header to the center */
@@ -31,8 +35,72 @@ header {
     /* Setting the top position of the header to 0 */
     top: 0; /* positioning the header at the top */
     /* Setting the width of the header to 97.4vw */
-    width: 97.4vw; /* 97.4% of the viewport width */
+    width: 98.5%; /* 97.4% of the viewport width */
 }
+.pages{
+    /* background-color: #FE5821; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    /* width: 850px; */
+    height: 50px;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+}
+ li{
+    gap: 30px;
+    list-style: none;
+}
+.nav-img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(104, 97, 97);
+}
+a{
+    text-decoration: none;
+}
+li a h3{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+   text-decoration: none; 
+}
+.code {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* width: 60px; */
+}
+.nav-text{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* background-color: pink; */
+    align-items: center;
+}
+.circle-nav{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid rgb(104, 97, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot-nav{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(104, 97, 97);
+    cursor: pointer;
+}
+
+
+
 
 /* Styling the box-cont element */
 .box-cont {
@@ -129,7 +197,7 @@ header {
 /* Styling the searchBtn element */
 .searchBtn {
     /* Setting the margin left to 650px */
-    margin-left: 650px; /* margin left of 650px */
+    margin-left: 550px; /* margin left of 650px */
     /* Setting the width and height to 350px and 30px respectively */
     width: 350px; /* width of 350px */
     height: 30px; /* height of 30px */
@@ -186,7 +254,6 @@ header {
     /* Setting the border to none */
     border: none; /* no border */
 }
-
 /* Styling the bar element */
 .bar {
     /* Setting the width and height to 0.2px and 20px respectively */
@@ -408,20 +475,20 @@ main{
     grid-template-columns: 50% 50%;
     grid-template-rows: 33% 33% 33%;
     row-gap:10px;
-    column-gap:10px;
+    column-gap: 10px;
     margin-top:30px;
     
 }
 .projects{
     border: 1px solid rgb(104, 97, 97);
     border-radius:10px;
-    width:95%;
+    width: 440px;
     height:120px;
     /* padding: 10px; */
 }
 .cont-text h1{
     position:absolute;
-    top:570px;
+    top:625px;
     color:white;
     font-size:20px;
     font-weight: 200;
@@ -453,10 +520,11 @@ main{
     grid-template-columns: 49.8% 0.4% 49.8%;
 }
 .line-commit{
-    border: 0.5px solid rgb(104, 97, 97);
-    width: 0.5px;
+    /* border: 1px solid rgb(104, 97, 97); */
+    width: 1px;
     height: 250px;
     margin-top: 20px;
+    background-color: rgb(104, 97, 97);
 }
 .acti{
     /* background-color: yellow; */
@@ -465,6 +533,9 @@ main{
 }
 .cross{
     /* background-color: pink; */
+}
+.cont-act{
+    height: 500px;
 }
 .repo-text h2{
     color: white;
@@ -496,4 +567,15 @@ main{
     height: 1px;
     background-color: rgb(104, 97, 97);
     margin-left: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    color: #687079;
+    padding-bottom: 100px;
 }
