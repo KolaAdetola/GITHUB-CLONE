@@ -22,7 +22,7 @@ header {
     background-color: #010409; /* dark blue background */
     /* Adding padding to the header */
     padding-left: 10px; /* 15px top and bottom, 10px left and right */
-    padding-right: 10px;
+    padding-right: 20px;
     padding-top: 15px;
     padding-bottom: 0px;
     /* Displaying the header as a flex box */
@@ -35,14 +35,15 @@ header {
     /* Setting the top position of the header to 0 */
     top: 0; /* positioning the header at the top */
     /* Setting the width of the header to 97.4vw */
-    width: 98.5%; /* 97.4% of the viewport width */
+    /* width: 98.5%; 97.4% of the viewport width */
+    border-bottom: 1px solid rgb(104, 97, 97);
 }
 .pages{
     /* background-color: #FE5821; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 5px;
     /* width: 850px; */
     height: 50px;
     align-items: center;
@@ -65,7 +66,7 @@ a{
 li a h3{
     font-size: 15px;
     color: #fff;
-    font-weight: 200;
+    font-weight: 600;
    text-decoration: none; 
 }
 .code {
@@ -98,10 +99,6 @@ li a h3{
     background-color: rgb(104, 97, 97);
     cursor: pointer;
 }
-
-
-
-
 /* Styling the box-cont element */
 .box-cont {
     /* Displaying the box-cont as a flex box */
@@ -111,7 +108,6 @@ li a h3{
     /* Setting the margin left to 30px */
     margin-left: 30px; /* margin left of 30px */
 }
-
 /* Styling the container element */
 .container {
     /* Setting the max width of the container to 1200px */
@@ -128,7 +124,6 @@ li a h3{
     margin-right: 90px; /* margin right of 90px */
     /* flex-wrap: wrap; */
 }
-
 /* Styling the hamburger element */
 .hamburger {
     /* Setting the width and height of the hamburger to 30px */
@@ -151,7 +146,6 @@ li a h3{
     /* Adding padding to the hamburger */
     padding: 3px; /* 3px padding */
 }
-
 /* Styling the line element */
 .line {
     /* Setting the width and height of the line to 20px and 2px respectively */
@@ -170,7 +164,6 @@ li a h3{
     /* Setting the background color of the line to rgb(104, 97, 97) */
     background-color: rgb(104, 97, 97); /* gray background */
 }
-
 /* Styling the logo element */
 .logo {
     /* Setting the margin left to -10px */
@@ -193,7 +186,6 @@ li a h3{
     /* Setting the margin left to -10px */
     margin-left: -10px; /* margin left of -10px */
 }
-
 /* Styling the searchBtn element */
 .searchBtn {
     /* Setting the margin left to 650px */
@@ -211,7 +203,6 @@ li a h3{
     align-items: center; /* vertically center elements */
     /* background-color: #010409; */
 }
-
 /* Styling the searchImg element */
 .searchImg {
     /* Setting the width and height to 20px */
@@ -230,7 +221,6 @@ li a h3{
     /* margin-top: 5px; */
     /* position: absolute; */
 }
-
 /* Styling the search element */
 .search {
     /* Setting the width and height to 250px and 28px respectively */
@@ -243,7 +233,7 @@ li a h3{
     /* Justifying the content of the search to the center */
     justify-content: center; /* center justify */
     /* Setting the margin left to 20px */
-    margin-left: 20px; /* margin left of 20px */
+    margin-left: 10px; /* margin left of 20px */
     /* Setting the cursor to text */
     cursor: text; /* text cursor */
     /* margin-top: 5px; */
@@ -259,7 +249,7 @@ li a h3{
     /* Setting the width and height to 0.2px and 20px respectively */
     width: 0.2px; /* width of 0.2px */
     height: 20px; /* height of 20px */
-    border:0.2px solid rgb(104, 97, 97);
+    /* border:0.2px solid rgb(104, 97, 97); */
     margin-left: -10px;
     background-color: rgb(104, 97, 97);
 }
@@ -271,11 +261,11 @@ li a h3{
 #bar{
     width: 0.2px;
     height: 20px;
-    border:0.2px solid rgb(104, 97, 97);
+    /* border:0.2px solid rgb(104, 97, 97); */
     margin-left: -40px;
     gap: 10px;
     align-self: center;
-    background-color: #fff;
+    background-color: rgb(104, 97, 97);
 }
 .new{
     width: 40px;
@@ -498,9 +488,88 @@ span{
 .projects{
     border: 1px solid rgb(104, 97, 97);
     border-radius:10px;
-    width: 440px;
-    height:100px;
-    /* padding: 10px; */
+    width: 415px;
+    height:85px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;  
+}
+.language{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.language h3{
+    color: #687079;
+    font-weight: 400;
+    font-size: 15px;
+}
+.lang-img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #563D7C;
+}
+.lang-img1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #E34C26;
+}
+.lang-img2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F1E05A;
+}
+.repo-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    /* position: fixed; */
+}
+
+.line-1{
+    flex-wrap:wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 30px;
+
+}
+.repo-name h3{
+    color: #3F87E4;
+    font-weight: 600;
+}
+.privacy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border: 1px solid rgb(104, 97, 97);
+    border-radius: 15px;
+}
+.privacy h3{
+    color: #687079;
+    font-size: 16px;
+    font-weight: 600;
+}
+.abs{
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    width: 20px;
+}
+.points{
+    width: 2px;
+    height: 2px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 .cont-text {
     display: flex;
@@ -531,7 +600,7 @@ span{
     /* background-color:pink; */
     width:53vw;
     height:300px;
-    display: grid;;
+    display: flex;
     /* grid-row: 50% 50%; */
     border:1px solid rgb(104, 97, 97);
     border-radius:8px;
