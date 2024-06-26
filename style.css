@@ -644,8 +644,28 @@ span{
     /* background-color: pink; */
 }
 .cont-act{
-    
-    height: 500px;
+    /* background-color:pink; */
+}
+.cont-act button{
+    width:100%;
+    padding: 20px;
+    height: 30px;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#4472A3;
+    background-color:#0D1117;
+    border:1px solid rgb(104, 97, 97);
+    font-weight:700;
+    margin-bottom:30px;
+}
+.cont-act h5{
+    color:#687079;
+    font-weight:500;
+}
+.git-link{
+    color:#4472A3;
 }
 .repo-text h2{
     color: white;
@@ -662,6 +682,7 @@ span{
     flex-direction: row;
     font-size: 15px;
     align-items: center;
+    /* background-color:green; */
     /* justify-content: center; */
 }
 .june h3{
@@ -677,6 +698,74 @@ span{
     height: 1px;
     background-color: rgb(104, 97, 97);
     margin-left: 20px;
+}
+.wall{
+    width: 2px;
+    background-color: #242A30;
+    height: 25vh;
+    margin-left:30px;
+    margin-top:10px;
+
+}
+.status{
+    padding-bottom:20px;
+    /* background-color: pink; */
+}
+.status-img{
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    background-color: #21262D;
+}
+.status-quo{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    position:absolute;
+    width:52vw;
+    top: 1100px;
+    left:400px;
+    margin-bottom:20px;
+    /* background-color: white; */
+}
+.status-qo{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    position:absolute;
+    width:52vw;
+    top: 1200px;
+    left:400px;
+    margin-bottom:20px;
+    /* background-color: white; */
+}
+.status-quo section{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-left: 10px;
+    gap:15px;
+    /* background-color:pink; */
+}
+.status-qo section{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-left: 10px;
+    gap:15px;
+    /* background-color:pink; */
+}
+.status-quo h3{
+    color:#fff;
+    font-weight:400;
+    font-size:18px;
+}
+.status-qo h3{
+    color:#fff;
+    font-weight:400;
+    font-size:18px;
 }
 footer{
     display: flex;
