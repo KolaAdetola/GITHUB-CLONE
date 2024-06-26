@@ -74,7 +74,17 @@ li a h3{
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    
     /* width: 60px; */
+}
+.overview{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* background-color:#fff; */
+    height:100%;
+    border-bottom: 2px solid #F78166;
 }
 .nav-text{
     display: flex;
