@@ -1,5 +1,5 @@
 /* Resetting the margin and padding to 0 for all HTML elements */
-* {
+* {   
     margin: 0; /* removing default margin */
     padding: 0; /* removing default padding */
     
@@ -11,6 +11,7 @@
 /* Setting the background color of the body to #0d1117 */
 body {
     background-color: #0d1117; /* dark blue background */
+
 }
 
 /* Styling the header element */
@@ -155,6 +156,7 @@ li a h3{
     align-items: center; /* vertically center elements */
     /* Adding padding to the hamburger */
     padding: 3px; /* 3px padding */
+    cursor: pointer;
 }
 /* Styling the line element */
 .line {
@@ -635,17 +637,6 @@ span{
     margin-top: 20px;
     background-color: rgb(104, 97, 97);
 }
-.acti{
-    /* background-color: yellow; */
-    /* border-right: 1px solid rgb(104, 97, 97); */
-    
-}
-.cross{
-    /* background-color: pink; */
-}
-.cont-act{
-    /* background-color:pink; */
-}
 .cont-act button{
     width:100%;
     padding: 20px;
@@ -777,4 +768,117 @@ footer{
     gap: 15px;
     color: #687079;
     padding-bottom: 50px;
+}
+.left-side-view{
+    width: 25vw;
+    background-color: #0D1117;
+    height: 100%;
+    display:none;
+    position: absolute;
+    border: 1px  solid rgb(104, 97, 97);
+    border-radius: 8px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-bottom: 25px;
+    border-left: none;
+    /* animation: moveLeftToRight 1s; */
+    overflow: auto;
+    /* overflow: hidden; */
+}
+@keyframes moveLeftToRight {
+    0%{
+        left: -200px;
+        /* opacity:0; */
+    }
+    50%{
+        left: 0px;
+        /* opacity: 1; */
+    }
+}
+.exit-img{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.X{
+    color: #687079;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.X:hover{
+    background-color: #d1cbcb;
+    transition: 1ms ease-in;
+}
+.side-nav{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.side-view{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.side-pin{
+    width:100%;
+    height:1px;
+    background-color: rgb(104, 97, 97);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.left-headings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.left-headings h2{
+    font-size: 20px;
+    color: #d1cbcb;
+    font-weight: 400;
+}
+.left-repos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+.left-words h4{
+    font-weight: 400;
+    color: #687079;
+}
+.left-words{
+    padding-bottom: 20px;
+}
+.copyright{
+    margin-left: -10px;
+}
+.copyright h4{
+    font-weight: 400;
+    color: #687079;
+}
+.left-links ol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.left-links li{
+    color: #3F87E4;
+    font-weight: 400;
+}
+.left-links h4{
+    color: #3F87E4;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.left-links{
+    margin-top: 10px;
 }
